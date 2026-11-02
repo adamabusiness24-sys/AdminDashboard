@@ -1,0 +1,31 @@
+﻿
+
+<div class="text-center">
+	<h1 class="display-4">Add product</h1>
+</div>
+
+<form asp-controller="Product" method="post" asp-action="AddProductItem">
+
+	<div class="mb-3">
+		<label class="form-label">Product Name</label>
+		<input type="text" name="productname" class="form-control" placeholder="Entrer le nom" required />
+	</div>
+
+	<div class="mb-3">
+		<label class="form-label">Description</label>
+		<input type="text" name="description" class="form-control" placeholder="Entrer la description" required />
+	</div>
+
+	<div class="mb-3">
+		<label class="form-label">Price</label>
+		<input type="number" name="price" class="form-control" placeholder="Entrer le prix" required />
+	</div>
+
+	<div class="mb-3">
+		<label class="form-label">Color</label>
+		<input type="text" name="color" class="form-control" placeholder="Entrer la couleur" required />
+	</div>
+
+	<button type="submit" class="btn btn-primary">Add product</button>
+
+</form>
